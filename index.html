@@ -9,40 +9,119 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-dark py-3 mb-4">
-        <div class="container d-flex flex-wrap align-items-center justify-content-between">
-            <h1 class="d-flex align-items-center gap-4 m-0" style="font-size:3.2rem; min-height:120px;">
-                <img src="images/logo.png" alt="Total Space Solutions Logo" class="rounded-3 bg-white shadow" style="height:120px; width:120px; object-fit:contain;"/>
-                <span class="text-white align-middle">Total Space Solutions</span>
-            </h1>
-            <nav class="nav gap-3">
-                <a href="index.html" class="nav-link text-white">Home</a>
-                <a href="about.html" class="nav-link text-white">About Us</a>
-                <a href="services.html" class="nav-link text-white">Services</a>
-                <a href="contact.html" class="nav-link text-white">Contact</a>
-            </nav>
+    <header class="site-header mb-4">
+        <div class="header-top container d-flex justify-content-between align-items-center pt-3 pb-2">
+            <div class="header-tagline text-muted small">
+                Landscaping, Gardening & Cleaning<br>Hermanus, South Africa
+            </div>
+            <div class="header-logo-wrap text-center flex-grow-1">
+                <img src="images/logo.png" alt="Total Space Solutions Logo" class="header-logo main-logo" />
+            </div>
+            <div class="header-contact text-end small">
+                <div><a href="tel:0760922708" class="text-reset text-decoration-none">076 092 2708</a></div>
+                <div><a href="mailto:francois2botha@gmail.com" class="text-reset text-decoration-none">francois2botha@gmail.com</a></div>
+                <div><a href="https://wa.me/27760922708" class="text-success text-decoration-none">WhatsApp</a></div>
+            </div>
         </div>
+        <nav class="header-nav-bar">
+            <div class="container">
+                <div class="nav-center">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="cleaning-services.html" class="nav-link">Cleaning Services</a>
+                    <a href="landscape-services.html" class="nav-link">Landscape Services</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
 
-        <!-- Hero Section with Real Image and Bootstrap -->
-        <section class="py-5 text-center text-white" style="background: url('images/TS Landscaping/Total-Space-Solutions (10).jpg') center/cover no-repeat; min-height: 380px;">
-            <div class="container" style="background: rgba(34,34,34,0.65); border-radius: 1.5rem; max-width: 600px; margin: 0 auto; padding: 2.5rem 1.5rem;">
-                <h2 class="display-5 fw-bold mb-3">Transforming Hermanus Gardens with Local Expertise</h2>
-                <p class="lead mb-4">Premium landscaping, indigenous fynbos gardens, and property care—trusted by Overberg homeowners and estates.</p>
+    <main>
+        <!-- Modern Hero Section (logo removed, more height and padding) -->
+        <section class="hero-section d-flex align-items-center justify-content-center text-center text-white">
+            <div class="container hero-content">
+                <img src="images/hero/hermanus.jpg" alt="Total Space Solutions Hermanus Banner" class="img-fluid rounded-4 shadow mb-4" style="max-width:900px;width:100%;height:auto;object-fit:cover;" />
+                <h1 class="display-4 fw-bold mb-3">Landscaping & Cleaning Services in Hermanus</h1>
+                <p class="lead mb-4">Transforming gardens and spaces with local expertise, care, and pride. From indigenous landscaping to spotless cleaning, we help you create and maintain beautiful, healthy environments.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3 mb-2">
+                    <a href="landscape-services.html" class="btn btn-success btn-lg px-4">Landscaping Services</a>
+                    <a href="cleaning-services.html" class="btn btn-primary btn-lg px-4">Cleaning Services</a>
+                </div>
                 <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <a href="https://wa.me/27760922708" class="btn btn-warning btn-lg px-4">WhatsApp Us</a>
-                    <a href="tel:0760922708" class="btn btn-success btn-lg px-4">Call Now</a>
-                    <a href="mailto:francois2botha@gmail.com" class="btn btn-outline-light btn-lg px-4">Email</a>
+                    <a href="https://wa.me/27760922708" class="btn btn-warning px-4">WhatsApp Us</a>
+                    <a href="tel:0760922708" class="btn btn-outline-light px-4">Call Now</a>
                 </div>
             </div>
         </section>
 
-        <!-- Personal Intro with Real Image and Bootstrap -->
-        <section class="about container my-5 text-center">
-            <img src="images/TS Landscaping/Total-Space-Solutions (11).jpg" alt="Owner at work" class="rounded-circle shadow mb-3 img-fluid" style="width:180px; height:180px; object-fit:cover;"/>
-            <h2 class="fw-bold">Meet Your Local Garden Experts</h2>
-            <p class="lead">We’re passionate about creating beautiful, sustainable gardens in Hermanus and the Overberg. With deep roots in the community and a love for indigenous fynbos, we bring local knowledge and hands-on care to every project—big or small. Let us help you restore, maintain, or reinvent your outdoor space with pride and professionalism.</p>
+        <!-- Services Highlights Section -->
+        <section class="container my-5">
+            <div class="row g-4 align-items-stretch justify-content-center">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/TS Landscaping/Total-Space-Solutions (12).jpg" class="card-img-top img-fluid" alt="Landscaping Services" style="height:260px; object-fit:cover;">
+                        <div class="card-body text-center">
+                            <h2 class="h4 fw-bold mb-2" style="color:#388e3c;">Landscaping & Indigenous Gardens</h2>
+                            <p class="mb-3">Garden design, fynbos planting, water-wise solutions, pathways, and estate maintenance. We create wildlife-friendly, sustainable gardens tailored to your needs.</p>
+                            <a href="landscape-services.html" class="btn btn-outline-success">Explore Landscaping</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/TS Cleaning/Total-Space-Solutions (16).jpg" class="card-img-top img-fluid" alt="Cleaning Services" style="height:260px; object-fit:cover;">
+                        <div class="card-body text-center">
+                            <h2 class="h4 fw-bold mb-2" style="color:#1976d2;">Cleaning Services</h2>
+                            <p class="mb-3">Professional cleaning for homes, offices, and estates. Deep cleaning, regular maintenance, and specialized services for a spotless, healthy environment.</p>
+                            <a href="cleaning-services.html" class="btn btn-outline-primary">Explore Cleaning</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About/Intro Section -->
+        <section class="about container my-5 py-4 rounded-4 shadow-sm bg-light text-center">
+            <img src="images/TS Landscaping/Total-Space-Solutions (11).jpg" alt="Owner at work" class="rounded-circle shadow mb-3 img-fluid" style="width:160px; height:160px; object-fit:cover;"/>
+            <h2 class="fw-bold">Meet Your Local Experts</h2>
+            <p class="lead">We’re passionate about creating beautiful, sustainable spaces in Hermanus and the Overberg. With deep roots in the community and a love for indigenous fynbos, we bring local knowledge and hands-on care to every project—big or small. Let us help you restore, maintain, or reinvent your property with pride and professionalism.</p>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="container my-5">
+            <h2 class="text-center mb-4" style="color:#bfa94c;">Our Work in Pictures</h2>
+            <div class="row g-3 justify-content-center gallery-squares">
+                <div class="col-6 col-md-3">
+                    <div class="gallery-square">
+                        <img src="images/TS Landscaping/Total-Space-Solutions (13).jpg" class="img-fluid rounded-3 shadow-sm" alt="Landscaping Example 1"/>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="gallery-square">
+                        <img src="images/TS Landscaping/Total-Space-Solutions (14).jpg" class="img-fluid rounded-3 shadow-sm" alt="Landscaping Example 2"/>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="gallery-square">
+                        <img src="images/TS Cleaning/Total-Space-Solutions (17).jpg" class="img-fluid rounded-3 shadow-sm" alt="Cleaning Example 1"/>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="gallery-square">
+                        <img src="images/TS Cleaning/Total-Space-Solutions (18).jpg" class="img-fluid rounded-3 shadow-sm" alt="Cleaning Example 2"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section py-5 text-center text-white" style="background: linear-gradient(90deg,#388e3c 60%,#1976d2 100%);">
+            <div class="container">
+                <h2 class="display-6 fw-bold mb-3">Ready to transform your space?</h2>
+                <p class="lead mb-4">Contact us for a free quote or to discuss your landscaping and cleaning needs.</p>
+                <a href="contact.html" class="btn btn-light btn-lg px-5">Contact Us</a>
+            </div>
         </section>
 
         <!-- Why Choose Us with Real Images and Bootstrap -->
@@ -90,46 +169,48 @@
 
                 <!-- Services Overview -->
                 <section class="services container my-5">
-                    <h2 class="text-center mb-4">Our Services</h2>
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
-                        <div class="col d-flex">
-                            <div class="card flex-fill h-100 shadow-sm text-center p-3">
-                                <h3 class="h5">Landscaping & Indigenous Gardens</h3>
-                                <ul class="list-unstyled small mb-0">
-                                    <li>Garden design & planting</li>
-                                    <li>Pathways & stonework</li>
-                                    <li>Irrigation & water-wise solutions</li>
-                                    <li>Fynbos integration</li>
-                                </ul>
+                    <div class="services-bg p-4 p-md-5 mb-5 rounded-4 shadow-sm">
+                        <h2 class="text-center mb-4">Our Services</h2>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+                            <div class="col d-flex">
+                                <div class="card flex-fill h-100 shadow-sm text-center p-4 service-card">
+                                    <h3 class="h5">Landscaping & Indigenous Gardens</h3>
+                                    <ul class="list-unstyled small mb-0">
+                                        <li>Garden design & planting</li>
+                                        <li>Pathways & stonework</li>
+                                        <li>Irrigation & water-wise solutions</li>
+                                        <li>Fynbos integration</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col d-flex">
-                            <div class="card flex-fill h-100 shadow-sm text-center p-3">
-                                <h3 class="h5">Garden Maintenance</h3>
-                                <ul class="list-unstyled small mb-0">
-                                    <li>Regular maintenance plans</li>
-                                    <li>Pruning & seasonal cleanup</li>
-                                    <li>Lawn care & weed control</li>
-                                </ul>
+                            <div class="col d-flex">
+                                <div class="card flex-fill h-100 shadow-sm text-center p-4 service-card">
+                                    <h3 class="h5">Garden Maintenance</h3>
+                                    <ul class="list-unstyled small mb-0">
+                                        <li>Regular maintenance plans</li>
+                                        <li>Pruning & seasonal cleanup</li>
+                                        <li>Lawn care & weed control</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col d-flex">
-                            <div class="card flex-fill h-100 shadow-sm text-center p-3">
-                                <h3 class="h5">Rubble Removal & Site Cleanup</h3>
-                                <ul class="list-unstyled small mb-0">
-                                    <li>Building rubble & garden waste</li>
-                                    <li>Site clearing & fast removal</li>
-                                </ul>
+                            <div class="col d-flex">
+                                <div class="card flex-fill h-100 shadow-sm text-center p-4 service-card">
+                                    <h3 class="h5">Rubble Removal & Site Cleanup</h3>
+                                    <ul class="list-unstyled small mb-0">
+                                        <li>Building rubble & garden waste</li>
+                                        <li>Site clearing & fast removal</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col d-flex">
-                            <div class="card flex-fill h-100 shadow-sm text-center p-3">
-                                <h3 class="h5">Estate & Property Maintenance</h3>
-                                <ul class="list-unstyled small mb-0">
-                                    <li>Outdoor upkeep</li>
-                                    <li>Pressure washing</li>
-                                    <li>General repairs</li>
-                                </ul>
+                            <div class="col d-flex">
+                                <div class="card flex-fill h-100 shadow-sm text-center p-4 service-card">
+                                    <h3 class="h5">Estate & Property Maintenance</h3>
+                                    <ul class="list-unstyled small mb-0">
+                                        <li>Outdoor upkeep</li>
+                                        <li>Pressure washing</li>
+                                        <li>General repairs</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -137,20 +218,21 @@
 
         <!-- Gallery Preview with Real Images and Bootstrap -->
         <section class="gallery container my-5">
-            <h2 class="text-center mb-4">Project Gallery</h2>
-            <div class="row g-3 justify-content-center">
-                <div class="col-6 col-md-3">
-                    <div class="card h-100">
-                        <img src="images/TS Landscaping/Total-Space-Solutions (12).jpg" alt="Before: Garden prep" class="card-img-top img-fluid" style="height:140px; object-fit:cover;"/>
-                        <div class="card-body p-2 text-center"><span>Before</span></div>
+            <div class="gallery-bg p-4 p-md-5 rounded-4 shadow-sm">
+                <h2 class="text-center mb-4">Project Gallery</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-6 col-md-3">
+                        <div class="card h-100 gallery-card">
+                            <img src="images/TS Landscaping/Total-Space-Solutions (12).jpg" alt="Before: Garden prep" class="card-img-top img-fluid" style="aspect-ratio:1/1; object-fit:cover;"/>
+                            <div class="card-body p-2 text-center"><span>Before</span></div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="card h-100">
-                        <img src="images/TS Landscaping/Total-Space-Solutions (13).jpg" alt="After: Pathway and vegetable garden" class="card-img-top img-fluid" style="height:140px; object-fit:cover;"/>
-                        <div class="card-body p-2 text-center"><span>After</span></div>
+                    <div class="col-6 col-md-3">
+                        <div class="card h-100 gallery-card">
+                            <img src="images/TS Landscaping/Total-Space-Solutions (13).jpg" alt="After: Pathway and vegetable garden" class="card-img-top img-fluid" style="aspect-ratio:1/1; object-fit:cover;"/>
+                            <div class="card-body p-2 text-center"><span>After</span></div>
+                        </div>
                     </div>
-                </div>
                 <div class="col-6 col-md-3">
                     <div class="card h-100">
                         <img src="images/TS Landscaping/Total-Space-Solutions (14).jpg" alt="Fynbos garden" class="card-img-top img-fluid" style="height:140px; object-fit:cover;"/>
