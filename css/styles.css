@@ -1,3 +1,12 @@
+body > :first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+html, body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 /* Improved Services Section Background and Padding */
 .services-bg {
     background: #f8f7f3;
@@ -100,6 +109,8 @@
     background: #f8f7f3;
     border-bottom: 1.5px solid #e0e0e0;
     box-shadow: 0 2px 8px rgba(35,35,35,0.04);
+    margin-top: 0;
+    padding-top: 0;
 }
 .header-top {
     display: flex;
@@ -217,8 +228,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .hero-section::before {
@@ -832,4 +843,13 @@ footer {
     .hero-img {
         max-width: 98vw;
     }
+}
+
+html, body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
